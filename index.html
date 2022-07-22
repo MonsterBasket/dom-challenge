@@ -9,10 +9,19 @@
       display: table;
       padding: 10px;
     }
+    .party{
+        background:linear-gradient(315deg, #f00, #ff0, #0f0, #0ff, #00f, #f00, #ff0, #0f0, #0ff, #00f, #f00, #ff0, #0f0, #0ff, #00f, #f00, #ff0, #0f0, #0ff, #00f, #f00);
+        background-size: 400% 400%;
+        animation: gradient 2s linear infinite;
+      }
+      @keyframes gradient {
+        0%,100%  {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+      }
   </style>
 </head>
 <body>
-  <h1>
+  <h1 title="thank you, I'm very happy to be here">
     Welcome to the DOM Challenge
   </h1>
   <h1 id='counter'>
@@ -39,7 +48,7 @@
 
   </div>
 
-  <script src="js/index.min.js"></script>
+  <!--<script src="js/index.min.js"></script>-->
   <script src="js/challenge.js"></script>
 </body>
 </html>
